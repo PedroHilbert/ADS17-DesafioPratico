@@ -1,4 +1,4 @@
-
+/*
 create database controleprojetos;
 use controleprojetos;
 
@@ -12,3 +12,4 @@ create table if not exists projetos(
 );
 
 -- drop schema controleprojetos;
+*/

@@ -60,11 +60,5 @@ conexao.commit() #edita o banco de dados
 
 
 
-
-
-
-
-
-
 cursor.close()
 conexao.close()

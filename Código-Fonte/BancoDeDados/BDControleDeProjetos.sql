@@ -8,7 +8,7 @@ create table if not exists projetos(
     localizacao varchar(60) null,
     escopo varchar(60) null,
     cliente varchar(40) not null,
-    data_inicio datetime null
+    data_inicio varchar(10) null
 );
 
 -- drop schema controleprojetos;

@@ -24,15 +24,27 @@ comando = f'INSERT INTO projetos (nome_projeto, localizacao, escopo, cliente, da
 cursor.execute(comando)
 conexao.commit()
 '''
+
 #Aqui em baixo estaremos pesquisando os projetos cadastrado
+'''
 comando = f'SELECT * FROM projetos'
 cursor = conexao.cursor()
 cursor.execute(comando)
-
-resultado = cursor.fetchall() # ler o banco de dados
+resultado = cursor.fetchall()
 print(resultado)
 
+'''
 
+#Agora iremos fazer uma alteração em um Projeto cadastrado.
+'''
+idProjeto = 2
+ColunaAlterar = 'localizacao'
+Insert = 'Rua  Cícero'
+
+comando = f"UPDATE projetos SET {ColunaAlterar} = '{Insert}' WHERE idProjeto = {idProjeto}"
+cursor.execute(comando)
+conexao.commit() #edita o banco de dados
+'''
 
 
 
